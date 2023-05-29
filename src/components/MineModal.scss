@@ -1,0 +1,29 @@
+.mine-modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon-mine {
+        width: 30%;
+    }
+
+    .line {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .categories {
+        display: flex;
+        width: 100%;
+
+        .category {
+            width: 33%;
+            text-align: center;
+
+            &.checked {
+                background-color: pink;
+            }
+        }
+    }
+}

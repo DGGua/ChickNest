@@ -1,0 +1,45 @@
+.gal-modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon-tujian {
+        width: 20%;
+    }
+
+    .gallery-line {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        margin-top: 3%;
+
+        .icon-base {
+            width: 35%;
+            position: relative;
+
+
+            .icon-inner-back {
+                width: 100%;
+            }
+
+            .icon-bird {
+                position: absolute;
+                left: 10%;
+                bottom: 20%;
+                width: 80%;
+            }
+        }
+    }
+
+    .arrow-line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        gap: 10%;
+
+        .icon-arrow {
+            width: 20%;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.nest-frame {
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    right: 10%;
+    bottom: 30%;
+
+    .bird-wrapper {
+        position: absolute;
+        width: 0;
+        height: 0;
+        transition: ease-in-out 1s;
+
+        .bird {
+            opacity: 100%;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 10vh;
+            height: 10vh;
+            transform: translate(-50%, -80%);
+        }
+    }
+}
+
+
+@keyframes move {
+    0% {
+        left: 0;
+        transform: rotateY(0deg);
+    }
+
+    45% {
+        left: 100px;
+        transform: rotateY(0deg);
+    }
+
+    55% {
+        left: 50px;
+        transform: rotateY(180deg);
+    }
+
+    90% {
+        left: 0;
+        transform: rotateY(180deg);
+    }
+}

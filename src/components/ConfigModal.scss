@@ -1,0 +1,20 @@
+.config-modal-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .icon-config {
+        width: 20%;
+    }
+
+    .img-choice {
+        margin-top: 15%;
+        width: 70%;
+    }
+
+    .icon-ok {
+        margin-top: 40%;
+        width: 35%;
+        justify-self: end;
+    }
+}

@@ -1,0 +1,26 @@
+.shop-modal-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .icon-egg {
+        margin-top: 10%;
+        z-index: 1;
+        width: 50%;
+    }
+
+    .icon-egg-base {
+        margin-top: -30%;
+        width: 80%;
+    }
+
+    .icon-egg-button{
+        margin-top: 5%;
+        width: 40%;
+    }
+
+    .icon-chenggong{
+        margin-top: 5%;
+        width: 40%;
+    }
+}
