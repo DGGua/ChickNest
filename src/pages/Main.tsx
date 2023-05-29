@@ -26,20 +26,16 @@ export const MainPage = () => {
             </div>
             <div className="ui">
                 <div className="header" >
-                    <div className="button-player" onClick={() => { setShowMineModal(true) }}>
-                        <img className="icon-img" src={`${process.env.PUBLIC_URL}/mine.png`} alt="" />
-                    </div>
-                    <div className="button-shop" onClick={() => setShowShopModal(true)}>
-                        <img className="icon-img" src={`${process.env.PUBLIC_URL}/shop.png`} alt="" />
-                    </div>
+                    <img className="icon-img icon-header" src={`${process.env.PUBLIC_URL}/mine.png`} onClick={() => { setShowMineModal(true) }} alt="" />
+                    <img className="icon-img icon-header" src={`${process.env.PUBLIC_URL}/shop.png`} onClick={() => setShowShopModal(true)} alt="" />
                 </div>
                 <div className="body">
                     <div className="aside">
                         <div onClick={() => { setShowGalModal(true) }}>
-                            <img className="icon-img" src={`${process.env.PUBLIC_URL}/gallery.png`} alt="" />
+                            <img className="icon-img icon-aside" src={`${process.env.PUBLIC_URL}/gallery.png`} alt="" />
                         </div>
                         <div onClick={() => { setShowConfigModal(true) }}>
-                            <img className="icon-img" src={`${process.env.PUBLIC_URL}/config.png`} alt="" />
+                            <img className="icon-img icon-aside" src={`${process.env.PUBLIC_URL}/config.png`} alt="" />
                         </div>
                     </div>
                 </div>

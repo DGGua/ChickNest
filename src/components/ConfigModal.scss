@@ -2,19 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
 
     .icon-config {
         width: 20%;
+        min-width: 8vh;
     }
 
     .img-choice {
-        margin-top: 15%;
         width: 70%;
     }
 
     .icon-ok {
-        margin-top: 40%;
         width: 35%;
-        justify-self: end;
+        margin-bottom: 5%;
     }
 }

@@ -2,9 +2,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: space-between;
     .icon-tujian {
+        justify-self: start;
         width: 20%;
+        min-width: 8vh;
     }
 
     .gallery-line {
@@ -14,7 +16,7 @@
         margin-top: 3%;
 
         .icon-base {
-            width: 35%;
+            width: 40%;
             position: relative;
 
 
@@ -37,9 +39,9 @@
         align-items: center;
         margin-top: 5%;
         gap: 10%;
-
+        font-size: 3vh;
         .icon-arrow {
-            width: 20%;
+            width: 15%;
         }
     }
 }

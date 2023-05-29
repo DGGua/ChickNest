@@ -40,13 +40,15 @@ export const GalModal = (props: { show: boolean, onClose: () => void }) => {
         <Modal show={show} onClose={onClose}>
             <div className="gal-modal-wrapper">
                 <img className="icon-tujian" src={`${process.env.PUBLIC_URL}/gal.png`} alt="" />
-                <div className="gallery-line ">
-                    <GalItem index={page * 4} show={collected[page * 4]} />
-                    <GalItem index={page * 4 + 1} show={collected[page * 4 + 1]} />
-                </div>
-                <div className="gallery-line ">
-                    <GalItem index={page * 4 + 2} show={collected[page * 4 + 2]} />
-                    <GalItem index={page * 4 + 3} show={collected[page * 4 + 3]} />
+                <div className="gallery">
+                    <div className="gallery-line ">
+                        <GalItem index={page * 4} show={collected[page * 4]} />
+                        <GalItem index={page * 4 + 1} show={collected[page * 4 + 1]} />
+                    </div>
+                    <div className="gallery-line ">
+                        <GalItem index={page * 4 + 2} show={collected[page * 4 + 2]} />
+                        <GalItem index={page * 4 + 3} show={collected[page * 4 + 3]} />
+                    </div>
                 </div>
                 <div className="arrow-line ">
                     <img className="icon-arrow" src={`${process.env.PUBLIC_URL}/left.png`} alt="" onClick={handleLeft} />

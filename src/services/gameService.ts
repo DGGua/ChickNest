@@ -33,8 +33,8 @@ function fetchGlobalConfig(): Promise<{ data: { data: Record<string, any> } }> {
     }
 }
 function putGlobalConfig() {
-    window.chrome.webview?.postMessage({ action: "WriteData", filename: "config.json", data: globalConfig })
-    if (window.chrome.webview) {
+    window.chrome?.webview?.postMessage({ action: "WriteData", filename: "config.json", data: globalConfig })
+    if (!!window.chrome?.webview) {
         return new Promise((resolve) => {
             window.chrome.webview?.addEventListener("message", resolve, { once: true });
         });
