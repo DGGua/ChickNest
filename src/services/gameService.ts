@@ -20,7 +20,7 @@ const defaultConfig: Record<string, any> = {
     birds: Array(30).fill(false).map(() => Math.ceil(Math.random() * 16))
 }
 
-export const THEME = ["red", "green", "yellow", "blue"]
+export const THEME = ["Red", "Green", "Yellow", "Blue"]
 
 function fetchGlobalConfig(): Promise<{ data: { data: Record<string, any> } }> {
     window.chrome.webview?.postMessage({ action: "FetchData", filename: "config.json" })
